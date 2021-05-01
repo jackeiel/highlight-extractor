@@ -1,0 +1,2 @@
+model_checkpoint_path: "model_att=False_cont=LSTM_clause_lstm=False_bi=False_crf=False_weights"
+all_model_checkpoint_paths: "model_att=False_cont=LSTM_clause_lstm=False_bi=False_crf=False_weights"

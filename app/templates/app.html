@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Highlight Extraction</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      .alert {
+        background: green;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Highlight Extraction App</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/send" method="POST">
+        <label for="highlightArea">Enter Research Publication</label>
+        <textarea class="u-full-width" placeholder="Enter Research Publication" id="highlightArea" name="highlightArea"></textarea>
+        <input type="submit" 
+        value="Extract Highlights" 
+        onClick="alert('We’re extracting highlights from your text. This may take a few seconds.')" 
+        id="extractText" />
+        <br />
+        <div class="alert">
+          <!-- {{ sum }} -->
+          <ul>
+          {% for item in sum: %}
+          <li>{{ item }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
