@@ -15,10 +15,10 @@ config = tf.compat.v1.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 1.0
 config.gpu_options.allow_growth = True  # dynamically grow the memory used on the GPU
 #sess = tf.Session(config=config)
-sess = tf.compat.v1.Session()
+# sess = tf.compat.v1.Session()
 #import keras.backend as K
 from tensorflow.compat.v1.keras import backend as K
-K.set_session(sess)
+# K.set_session(sess)
 from keras.activations import softmax
 from keras.regularizers import l2
 from keras.models import Model, model_from_json
