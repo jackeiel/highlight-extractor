@@ -20,15 +20,15 @@ h = HighlightExtractor('models/scibert_scivocab_uncased', 'models/tagger', bidir
 tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 #---------------
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def main():
     return render_template('app.html')
 
 
-@app.route('/send', methods=['POST'])
+@application.route('/send', methods=['POST'])
 
 def send(sum=sum):
     if request.method == 'POST':
@@ -127,6 +127,5 @@ def send(sum=sum):
         return render_template('app.html', sum=sum)
 
 
-if __name__ == " __main__":
-    app.debug = True
-    app.run()
+if __name__ == "__main__":
+    application.run()
