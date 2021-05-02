@@ -11,9 +11,9 @@ from .util import read_passages, evaluate, make_folds, clean_words, test_f1, to_
 
 import tensorflow as tf
 #config = tf.ConfigProto()
-config = tf.compat.v1.ConfigProto()
-config.gpu_options.per_process_gpu_memory_fraction = 1.0
-config.gpu_options.allow_growth = True  # dynamically grow the memory used on the GPU
+# config = tf.compat.v1.ConfigProto()
+# config.gpu_options.per_process_gpu_memory_fraction = 1.0
+# config.gpu_options.allow_growth = True  # dynamically grow the memory used on the GPU
 #sess = tf.Session(config=config)
 # sess = tf.compat.v1.Session()
 #import keras.backend as K

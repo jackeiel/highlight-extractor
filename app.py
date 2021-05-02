@@ -10,7 +10,7 @@ import re
 
 import pandas as pd
 import numpy as np
-from rouge import Rouge
+# from rouge import Rouge
 import spacy
 import os
 import nltk.data

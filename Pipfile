@@ -12,6 +12,10 @@ tensorflow = "*"
 keras = "*"
 numpy = "*"
 pandas = "*"
+flask = "*"
+gunicorn = "*"
+nltk = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
