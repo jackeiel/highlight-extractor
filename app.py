@@ -127,6 +127,6 @@ def send(sum=sum):
         return render_template('app.html', sum=sum)
 
 
-if __name__ == ' __main__':
+if __name__ == " __main__":
     app.debug = True
     app.run()
