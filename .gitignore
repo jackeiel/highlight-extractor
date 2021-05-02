@@ -3,6 +3,7 @@
 test.py
 *.zip
 *.data-00000-of-00001
+*.pem
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
