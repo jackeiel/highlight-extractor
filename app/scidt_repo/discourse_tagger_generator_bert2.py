@@ -17,14 +17,14 @@ import tensorflow as tf
 #sess = tf.Session(config=config)
 # sess = tf.compat.v1.Session()
 #import keras.backend as K
-from tensorflow.compat.v1.keras import backend as K
+# from tensorflow.compat.v1.keras import backend as K
 # K.set_session(sess)
-from keras.activations import softmax
-from keras.regularizers import l2
-from keras.models import Model, model_from_json
-from keras.layers import Input, LSTM, Dense, Dropout, TimeDistributed, Bidirectional
-from keras.callbacks import EarlyStopping,LearningRateScheduler, ModelCheckpoint
-from keras.optimizers import Adam, RMSprop, SGD
+# from keras.activations import softmax
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.models import Model, model_from_json
+from tensorflow.keras.layers import Input, LSTM, Dense, Dropout, TimeDistributed, Bidirectional
+from tensorflow.keras.callbacks import EarlyStopping,LearningRateScheduler, ModelCheckpoint
+from tensorflow.keras.optimizers import Adam, RMSprop, SGD
 from .crf import CRF
 from .attention import TensorAttention
 from .custom_layers import HigherOrderTimeDistributedDense

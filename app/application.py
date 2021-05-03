@@ -1,7 +1,6 @@
 #Highlight Extraction App
 from flask import Flask, render_template, request
 
-
 #Testing Below
 #---------------
 import json
@@ -125,7 +124,3 @@ def send(sum=sum):
         sum = b.sentence.tail(5).tolist()
 
         return render_template('app.html', sum=sum)
-
-
-if __name__ == "__main__":
-    application.run()

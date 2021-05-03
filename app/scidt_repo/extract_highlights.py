@@ -15,7 +15,7 @@ import pandas as pd
 import numpy as np
 
 import spacy
-spacy.download("en_core_web_sm")
+
 nlp = spacy.load("en_core_web_sm")
 config = {"punct_chars": None}
 nlp.add_pipe("sentencizer", config=config)
