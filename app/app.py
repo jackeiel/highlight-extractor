@@ -124,7 +124,3 @@ def send(sum=sum):
         sum = b.sentence.tail(5).tolist()
 
         return render_template('app.html', sum=sum)
-
-
-if __name__ == "__main__":
-    app.run()
