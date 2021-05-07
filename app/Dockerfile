@@ -9,4 +9,4 @@ RUN python -m spacy download en_core_web_sm
 RUN python -c "import nltk; nltk.download('punkt')"
 EXPOSE 5000
 EXPOSE 8000
-CMD ["gunicorn", "--workers", "2", "--bind", "0.0.0.0:5000", "wsgi:app"]
+CMD ["python", "wsgi.py"]
