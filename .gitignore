@@ -2,5 +2,5 @@
 .idea/
 test.py
 *.zip
-*.data-00000-of-00001
 *.pem
+*.data-00000-of-00001
